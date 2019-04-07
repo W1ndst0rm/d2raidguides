@@ -1,0 +1,28 @@
+faqItem:
+  - ID : collapseOne
+    title : How do I get the Cleansing Knife sparrow?
+    content : The sparrow is a rare drop from the Morgeth encounter.
+
+  - ID : collapseTwo
+    title : How do I get the Wish-Maker ghost shell?
+    content : The ghost shell is rare drop from any of the encounters.
+
+  - ID : collapseThree
+    title : How do I get the Ermine TAC-717 ship?
+    content : The ship is a guaranteed drop for special chest between Morgeth and the Vault. It only appears after entering in wish two at the wall of wishes. It can only be opened with a glittering key, which is a rare drop from final chest.
+
+  - ID : collapseFour
+    title : How do I get One Thousand Voices?
+    content : One Thousand Voices is a rare drop from the final chest. 
+
+  - ID : collapseFive
+    title : How do I get the raid specific armour mods?
+    content : The raid specific mods have a chance to drop alongside a weapon or armour peace from the two hidden chests in the raid. They are below the bridge between Kalli and Shuro Chi, and on the cliffside between Shuro Chi and Morgeth.
+
+  - ID : collapseSix
+    title : What do I do with a Glittering Key?
+    content : The Glittering Key is used to open a special chest between Morgeth and Vault. The chest only appears after entering wish two in the wall of wishes.
+
+  - ID : collapseSeven
+    title : What is the Wall of Wishes and how do I get to it?
+    content : The Wall of Wishes is used to make wishes using Riven's power. It allows you make several changes to raid ranging from spawning an extra chest, to skiping to specific encounters, or adding special effects and extra narrators. 

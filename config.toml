@@ -1,0 +1,105 @@
+baseURL = "https://d2raidguides.firebaseapp.com/"
+languageCode = "en-us"
+title = "Destiny 2 Last Wish Raid Guide"
+#theme = "dot-hugo-documentation-theme"
+
+
+[params]
+primaryColor = "#02007e"
+secondaryColor = "#f9f9f9"
+textColor = "#636363"
+textColorDark = "#242738"
+whiteColor = "#ffffff"
+bgDarkGray = "#282c34"
+
+[Languages]
+
+  # English Language
+  [Languages.en]
+  #languageName = "En"
+  weight = 1
+  languageCode = "en-us"
+  title = "Destiny 2 Last Wish Raid Guide"
+  dateFormat = "2 January 2006"
+  home = "Home"
+  #logo = "Dot"
+  #copyright = "The Hugo Documents are copyright © gethugothemes 2018."
+
+    # navigation
+    [Languages.en.menu]
+    
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Faq"
+        url = "/faq"
+        
+      #[[Languages.en.menu.main]]
+      #  weight = 2
+      #  name = "contact"
+      #  url = "/contact"
+        
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "pages"
+        url = "/pages"
+        hasChildren = true
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Kalli"
+          URL = "/kalli"
+          weight = 1
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Shuro Chi"
+          URL = "/shuro-chi"
+          weight = 2
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Morgeth"
+          URL = "/morgeth"
+          weight = 3
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Vault"
+          URL = "/vault"
+          weight = 4
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Riven"
+          URL = "/riven"
+          weight = 5
+
+          [[Languages.en.menu.main]]
+          parent = "pages"
+          name = "Riven's Heart"
+          URL = "/queenswalk"
+          weight = 6
+		  
+    # banner
+    [Languages.en.params.banner]
+      title = "Last Wish Raid Guide"
+      description = "Search for a keyword or look at an encounter below"
+      image = "images/banner.jpg"
+      placeholder = "Search"
+
+    # Topics
+    [Languages.en.params.topics]
+      title = "Encounters"
+    
+    # call to action
+    #[Languages.en.params.cta]
+    #  enable = true
+    #  title = "Didn't find an answer to your question?"
+    #  description = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+    #  btnText = "contact us"
+    #  btnURL = "/contact"
+
+    # contact
+    #[Languages.en.params.contact]
+    #  title = "Got Any Questions"
+    #  content = "Submit the form and confirm your email address at <a class='text-primary' href='https://formspree.io/'>Formspree</a> Then add the following lines to contact page YAML Front Matter."

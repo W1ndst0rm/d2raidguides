@@ -1,0 +1,79 @@
+{{ define "main" }}
+
+  {{ "<!-- page title -->" | safeHTML }}
+  {{ if (isset .Page.Params "banner" ) }}
+  <div class="bg-cover banner" style="background-position-y: {{ .Page.Params.banner.y_position }};" data-background=" {{ .Page.Params.banner.url | absURL }} " >
+	<section class="section">
+    <div class="container">
+      <div class="row">
+		<div class="col-lg-8 text-center mx-auto">
+		  <h1 class="text-{{ .Page.Params.banner.text_color }} mb-3">{{ .Page.Params.title }}</h1>
+		</div>
+      </div>
+    </div>
+  </section>
+  </div>
+  {{ else }}
+  <section class="section bg-dark">
+    <div class="container">
+      <div class="row">
+        
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ "<!-- /page title -->" | safeHTML }}
+
+  {{ "<!-- details page -->" | safeHTML }}
+  <section class="single section bg-dark-gray pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="mb-5 bg-white p-4 sticky-top">
+            <a href="#">
+              <h4 class="mb-4">{{ .Title }}</h4>
+            </a>
+            <ul class="list-styled">
+              {{ range .Page.Params.nav }}
+			   
+				  <!--- List_Item -->
+                  <li><a href="{{ .url }}">{{ .name }}</a></li>
+
+				
+              {{ end }}
+			  <script>
+				// The function actually applying the offset
+				function offsetAnchor() {
+				  if (location.hash.length !== 0) {
+					window.scrollTo(window.scrollX, window.scrollY - 80);
+				  }
+				}
+
+				// Captures click events of all <a> elements with href starting with #
+				$(document).on('click', 'a[href^="#"]', function(event) {
+				  // Click events are captured before hashchanges. Timeout
+				  // causes offsetAnchor to be called after the page jump.
+				  window.setTimeout(function() {
+					offsetAnchor();
+				  }, 0);
+				});
+
+				// Set the offset when entering page with hash present in the url
+				window.setTimeout(offsetAnchor, 0);
+			  </script>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="p-5 bg-white">
+              <div class="bg-gray p-4">
+                  {{ .Content }}
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /details page -->" | safeHTML }}
+
+{{ end }}

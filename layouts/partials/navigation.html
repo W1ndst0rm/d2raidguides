@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Params.logo }}</a>
+  <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center" id="navigation">
+	{{ if not .IsHome }}
+	<form class="form-inline">
+	  <input id="search" class="form-control" placeholder="Search" aria-label="Search">
+			  {{ "<!-- Javascript -->" | safeHTML }}
+		<script>
+		  $(function() {
+			var projects = [
+			  {{ range .Data.Pages }}
+				{
+				  value: "{{ .Title }}",
+				  label: "{{ .Title }}",
+				  url:"{{ .Permalink }}"
+				},
+			  {{ end }}
+			];
+			$( "#search" ).autocomplete({
+				minLength: 0,
+				source: projects,
+				focus: function( event, ui ) {
+				  $( "#search" ).val( ui.item.label );
+					return false;
+				},
+				select: function( event, ui ) {
+				  $( "#search" ).val( ui.item.label );
+				  $( "#project-id" ).val( ui.item.value );
+				  return false;
+				}
+			})
+			.data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+			  return $( "<li>" )
+			  .append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.label + "</a>" )
+			  .appendTo( ul );
+			};
+		  });
+		</script>
+	</form>
+	{{ end }}
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>
+      </li>
+      {{ range .Site.Menus.main }}
+      {{ if .HasChildren }}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          {{ .Name }}
+        </a>
+        <div class="dropdown-menu" >
+          {{ range .Children }}
+          <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
+        </div>
+      </li>
+      {{ else }}
+      <li class="nav-item">
+          <a class="nav-link text-white" href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+    <!-- Language List -->
+    <ul class="list-inline text-center mb-0">
+      {{ range $.Site.Home.AllTranslations }}
+      <li class="list-inline-item"><a class="text-dark" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>
