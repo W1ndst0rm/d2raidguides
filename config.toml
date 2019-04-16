@@ -76,7 +76,7 @@ bgDarkGray = "#282c34"
 
           [[Languages.en.menu.main]]
           parent = "pages"
-          name = "Riven's Heart"
+          name = "Queenswalk"
           URL = "/queenswalk"
           weight = 6
 		  
