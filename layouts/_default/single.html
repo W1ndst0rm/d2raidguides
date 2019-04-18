@@ -1,28 +1,6 @@
 {{ define "main" }}
 
-  {{ "<!-- page title -->" | safeHTML }}
-  {{ if (isset .Page.Params "banner" ) }}
-  <div class="bg-cover banner" style="background-position-y: {{ .Page.Params.banner.y_position }};" data-background=" {{ .Page.Params.banner.url | absURL }} " >
-	<section class="section">
-    <div class="container">
-      <div class="row">
-		<div class="col-lg-8 text-center mx-auto">
-		  <h1 class="text-{{ .Page.Params.banner.text_color }} mb-3">{{ .Page.Params.title }}</h1>
-		</div>
-      </div>
-    </div>
-  </section>
-  </div>
-  {{ else }}
-  <section class="section bg-dark">
-    <div class="container">
-      <div class="row">
-        
-      </div>
-    </div>
-  </section>
-  {{ end }}
-  {{ "<!-- /page title -->" | safeHTML }}
+  {{ partial "post-banner.html" . }}
 
   {{ "<!-- details page -->" | safeHTML }}
   <section class="single section bg-dark-gray pb-0">
@@ -38,9 +16,17 @@
                     {{ range .Page.Params.nav }}
                
                         <!--- List_Item -->
+                        {{ if (isset . "subsections") }}
+                        <li><a href="{{ .url }}">{{ .name }}</a>
+                          <ul class="list-styled">
+                          {{ range .subsections }}
+                            <li><a href="{{ .url }}">{{ .name }}</a></li>
+                          {{ end }}
+                          </ul>
+                        </li>
+                        {{ else }}
                         <li><a href="{{ .url }}">{{ .name }}</a></li>
-      
-              
+                        {{ end }}
                     {{ end }}
                     <script>
                     // The function actually applying the offset

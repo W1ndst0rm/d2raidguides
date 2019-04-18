@@ -1,7 +1,6 @@
 baseURL = "https://d2raidguides.firebaseapp.com/"
 languageCode = "en-us"
 title = "Destiny 2 Last Wish Raid Guide"
-#theme = "dot-hugo-documentation-theme"
 
 
 [params]
@@ -33,49 +32,49 @@ bgDarkGray = "#282c34"
         name = "Faq"
         url = "/faq"
         
-      #[[Languages.en.menu.main]]
-      #  weight = 2
-      #  name = "contact"
-      #  url = "/contact"
-        
       [[Languages.en.menu.main]]
         weight = 2
-        name = "pages"
+        name = "Wishes"
+        url = "/Wishes"
+        
+      [[Languages.en.menu.main]]
+        weight = 4
+        name = "Encounters"
         url = "/pages"
         hasChildren = true
 
           [[Languages.en.menu.main]]
-          parent = "pages"
+          parent = "Encounters"
           name = "Kalli"
           URL = "/kalli"
           weight = 1
 
           [[Languages.en.menu.main]]
-          parent = "pages"
+          parent = "Encounters"
           name = "Shuro Chi"
           URL = "/shuro-chi"
           weight = 2
 
           [[Languages.en.menu.main]]
-          parent = "pages"
+          parent = "Encounters"
           name = "Morgeth"
           URL = "/morgeth"
           weight = 3
 
           [[Languages.en.menu.main]]
-          parent = "pages"
+          parent = "Encounters"
           name = "Vault"
           URL = "/vault"
           weight = 4
 
           [[Languages.en.menu.main]]
-          parent = "pages"
+          parent = "Encounters"
           name = "Riven"
           URL = "/riven"
           weight = 5
 
           [[Languages.en.menu.main]]
-          parent = "pages"
+          parent = "Encounters"
           name = "Queenswalk"
           URL = "/queenswalk"
           weight = 6

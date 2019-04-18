@@ -318,7 +318,7 @@ pre {
   box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
   padding: 15px;
   border: 0;
-  top: 60px;
+  top: 56px;
   left: -25px;
   border-radius: 0;
   display: block;
@@ -611,12 +611,55 @@ li.parent a {
   padding-left: 25px;
 }
 
+.page-content ol {
+  list-style-type: decimal;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.page-content ol ol{
+  list-style-type: lower-alpha;
+}
+
+.page-content ol ol ol{
+  list-style-type: lower-roman;
+}
+
+.page-content ol p {
+  margin-bottom: 0%;
+}
+
 .page-nav{
   top: 112px;
 }
 
 #symbols .card {
   height: 100%;
+}
+
+#symbols .row {
+  justify-content: center;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+  text-align: center;
+}
+
+.card-body {
+  padding: 0%
+}
+
+.wish {
+  margin-bottom: 1rem;
+}
+.wish img {
+  margin: 0%;
+  padding: 5px;
+}
+
+.wish .row {
+  justify-content: center;
 }
 
 /* /single page */
