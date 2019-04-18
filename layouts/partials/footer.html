@@ -1,7 +1,7 @@
 {{ "<!-- footer -->" | safeHTML }}
 <footer class="section bg-dark-gray pb-0">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-end">
       <div class="col-md-8 text-md-left text-center">
        {{ with .Site.Params.copyright }} <p>{{ .}}</p> {{ end }}
       </div>
@@ -11,6 +11,9 @@
           <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="{{ .URL | absURL}}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
+      </div>
+      <div>
+          <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'H2H6T6TM');kofiwidget2.draw();</script> 
       </div>
     </div>
   </div>
