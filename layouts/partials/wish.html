@@ -1,0 +1,17 @@
+{{ $symbols := ( dict "Split Snake" "snake-split.png" "U Snake" "snake-u.png" "Eight Snake" "snake-eight.png" "Infinity Snake" "snake-infinity.png" "Fire Left" "fire-left.b730a618.png" "Fire Right" "fire-right.80bdb1b8.png" "Spear Left" "spear-left.a4ba016f.png" "Spear Right" "spear-right.35d966ab.png" "Fish Left" "fish-left.215052b6.png" "Fish Up" "fish-up.8f1422d1.png" "Two Fish" "two-fish.c489ae23.png" "Fish Curl" "fish-curl.c0335cf7.png" "Bird Branch" "bird-branch.6f2c2f94.png" "Bird Down" "bird-down.25cfd81e.png" "Bird Stand" "bird-stand.a6648a24.png" "Bird Fly" "bird-fly.9ecd03e8.png" "Blank" "blank.png") }}
+
+<div class="container-fluid wish">
+    {{range .}}
+    <div class="row">
+        {{ range . }}
+        {{ $filename := index $symbols . }}
+        {{ $url := print "/images/symbols/" $filename }}
+        <div style="max-width: 140px;">
+                <div>
+                    <img src="{{$url}}" class="bg-dark-gray">
+                </div>
+        </div>
+        {{ end }}
+    </div>
+    {{end}}
+</div>

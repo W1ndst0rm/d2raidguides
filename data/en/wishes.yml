@@ -1,0 +1,151 @@
+wishItem:
+  - ID : collapseOne
+    title : "Wish #1"
+    subtitle : "To Feed an Addiction"
+    effect: "Grants an Ethereal Key"
+    symbols:
+      - ["Fish Left",   "Fish Left",   "Bird Branch", "Bird Branch", "Bird Branch"]
+      - ["Fish Left",   "Fish Left",   "Blank",       "Bird Branch", "Bird Branch"]
+      - ["Eight Snake", "Eight Snake", "Blank",       "Fish Up",     "Fish Up"]
+      - ["Eight Snake", "Eight Snake", "Fire Right",  "Fish Up",     "Fish Up"]
+
+  - ID : collapseTwo
+    title : "Wish #2"
+    subtitle : "For material validation"
+    effect: "Spawns the Glittering Chest between Morgeth and the Vault"
+    symbols:
+      - ["Fish Up",   "Blank", "Spear Right", "Blank", "Two Fish"]
+      - ["Fish Up",   "Blank", "Spear Right", "Blank", "Two Fish"]
+      - ["Fish Curl", "Blank", "Fire Right",  "Blank", "Two Fish"]
+      - ["Fish Curl", "Blank", "Fire Right",  "Blank", "Infinity Snake"]
+
+  - ID : collapseThree
+    title : "Wish #3"
+    subtitle : "For others to celebrate your success"
+    effect: "Awards the 'Numbers of Power' emblem"
+    symbols:
+      - ["Fish Left", "Blank",          "Fish Left", "Blank",          "Fish Left"]
+      - ["Blank",     "Infinity Snake", "Blank",     "Infinity Snake", "Blank"]
+      - ["Fire Left", "Blank",          "Fire Left", "Blank",          "Fire Left"]
+      - ["Blank",     "Bird Down",      "Blank",     "Bird Down",      "Blank"]
+      
+  - ID : collapseFour
+    title : "Wish #4"
+    subtitle : "To look athletic and elegant"
+    effect: "Wipe and teleport to Shuro Chi"
+    symbols:
+      - ["Bird Fly", "Bird Stand", "Bird Stand", "Bird Stand", "Bird Down"]
+      - ["Split Snake", "Bird Fly", "U Snake", "Bird Down", "Split Snake"]
+      - ["Split Snake", "Bird Down", "Blank", "Bird Fly", "Split Snake"]
+      - ["Bird Down", "Eight Snake", "Eight Snake", "Eight Snake", "Bird Fly"]
+
+  - ID : collapseFive
+    title : "Wish #5"
+    subtitle : "For a promising future"
+    effect: "Wipe and teleport to Morgeth"
+    symbols:
+      - ["Infinity Snake", "Spear Left", "Bird Fly", "Spear Left", "Infinity Snake"]
+      - ["Blank", "Fire Left", "Bird Stand", "Fire Left", "Blank"]
+      - ["Blank", "Fire Left", "Bird Stand", "Fire Left", "Blank"]
+      - ["Infinity Snake", "Spear Left", "Bird Fly", "Spear Left", "Infinity Snake"]
+      
+
+  - ID : collapseSix
+    title : "Wish #6"
+    subtitle : "To move the hands of time"
+    effect: "Wipe and teleport to the Vault"
+    symbols:
+      - ["Fire Right", "Bird Down", "Bird Stand", "Bird Down", "Fire Right"]
+      - ["Fish Left", "Fire Right", "Blank", "Fire Right", "Fish Left"]
+      - ["Fish Left", "Blank", "Blank", "Blank", "Fish Left"]
+      - ["Spear Right", "Spear Right", "Spear Right", "Spear Right", "Spear Right"]
+      
+
+  - ID : collapseSeven
+    title : "Wish #7"
+    subtitle : "To help a friend in need"
+    effect: "Wipe and teleport to Riven"
+    symbols:
+      - ["Bird Stand", "Fish Up", "Spear Left", "Blank", "Eight Snake"]
+      - ["Fire Left", "Blank", "Blank", "Split Snake", "Bird Fly"]
+      - ["Fire Left", "Blank", "Bird Branch", "Split Snake", "Bird Fly"]
+      - ["Bird Stand", "Fish Up", "Spear Left", "Blank", "Eight Snake"]
+      
+    
+  - ID : collapseEight
+    title : "Wish #8"
+    subtitle : "To stay here forever"
+    effect: "Plays song 'Hope for the Future'"
+    symbols:
+      - ["Blank", "Spear Left", "Bird Branch", "Spear Right", "Blank"]
+      - ["Blank", "Spear Left", "Bird Branch", "Spear Right", "Blank"]
+      - ["Blank", "Spear Left", "Bird Stand", "Spear Right", "Blank"]
+      - ["Blank", "Spear Left", "Bird Branch", "Spear Right", "Blank"]
+
+  - ID : collapseNine
+    title : "Wish #9"
+    subtitle : "To stay here forever"
+    effect: "Replace narrator with Failsafe"
+    symbols:
+      - ["Blank", "Blank", "Blank", "Blank", "Blank"]
+      - ["Blank", "Fish Curl", "Fish Curl", "Fish Curl", "Blank"]
+      - ["Blank", "Fish Curl", "Fish Curl", "Bird Branch", "Blank"]
+      - ["Blank", "Blank", "Blank", "Blank", "Blank"]
+      
+
+  - ID : collapseTen
+    title : "Wish #10"
+    subtitle : "To stay here forever"
+    effect: "Replace narrator with the Drifter"
+    symbols:
+      - ["Fish Curl", "Fish Curl", "Blank", "Blank", "Fish Curl"]
+      - ["Fish Curl", "Spear Left", "Spear Left", "Blank", "Fish Up"]
+      - ["Fish Curl", "Blank", "Split Snake", "Split Snake", "Fish Up"]
+      - ["Blank",  "Blank", "Blank", "Fish Up", "Fish Up"]
+      
+
+  - ID : collapseEleven
+    title : "Wish #11"
+    subtitle : "To stay here forever"
+    effect: "Adds the Grunt birthday party effect (Halo series) to the raid"
+    symbols:
+      - ["Bird Fly", "Bird Fly", "Blank", "Bird Stand", "Bird Stand"]
+      - ["Bird Fly", "Blank", "Fish Curl", "Infinity Snake", "Bird Stand"]
+      - ["Fire Left", "Blank", "Fish Curl", "Blank",  "Eight Snake"]
+      - ["Fire Left", "Fire Left", "Blank", "Eight Snake", "Eight Snake"]      
+
+  - ID : collapseTwelve
+    title : "Wish #12"
+    subtitle : "To open your mind to new ideas"
+    effect: "Adds unique effects to the heads of fireteam members"
+    symbols:
+      - ["Fish Left", "Blank", "Blank", "Blank", "Fire Left"]
+      - ["Fish Left", "Fish Left", "Fire Left", "Fire Left", "Fire Left"]
+      - ["Fish Up", "Fish Up", "Spear Left", "Bird Fly", "Bird Fly"]
+      - ["Fish Up", "Blank", "Blank", "Blank", "Bird Fly"]
+      
+  - ID : collapseThirteen
+    title : "Wish #13"
+    subtitle : "For the means to feed an addiction"
+    effect: "Starts 'Petra's Run' version of raid (Flawless mode)"
+    symbols:
+      - ["Bird Down", "Fish Curl", "Bird Branch", "Bird Fly", "U Snake"]
+      - ["Bird Down", "Fish Curl", "Blank", "Bird Fly", "U Snake"]
+      - ["U Snake", "Bird Fly", "Blank", "Fish Curl", "Bird Down"]
+      - ["U Snake", "Bird Fly", "Blank", "Fish Curl", "Bird Down"]
+      
+  - ID : collapseFourteen
+    title : "Wish #14"
+    subtitle : "For love and support"
+    effect: "Spawns Ahamkara eggs throughout the raid"
+    symbols:
+      - ["Infinity Snake", "Fire Right", "Bird Branch", "Fire Left", "Infinity Snake"]
+      - ["Blank", "Blank", "Bird Stand", "Blank", "Blank"]
+      - ["Fish Left", "Blank", "Eight Snake", "U Snake", "Blank"]
+      - ["Infinity Snake", "Spear Left", "Blank", "Blank", "Spear Right"]
+      
+  - ID : collapseFifteen
+    title : "Wish #15"
+    subtitle : "'This one you shall cherish' - Riven"
+    effect: "???" 
+    symbols:
