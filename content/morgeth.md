@@ -12,4 +12,4 @@ description: "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit am
 type : "encounter"
 ---
 
-# Guide in progress
+## Guide in progress

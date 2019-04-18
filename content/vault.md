@@ -11,7 +11,8 @@ banner:
 description: "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet"
 type : "encounter"
 ---
-# Guide in progress
+## Guide in progress
+
 {{< symbol-callouts >}}
   {{< symbol "Fish Left" true >}}
   {{< symbol "Fish Up" true >}}
