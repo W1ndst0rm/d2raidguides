@@ -115,6 +115,14 @@ In general it's best to have a way to apply a debuff for extra damage, a way to 
 
 ## Challenge: Summoning Ritual
 
-This challenge requires you to summon and kill three ogres in addition in completing the encounter. The ogres are summoned in the center of the arena when a guardian cleanses one of the three plates that don't match one of the symbols in the center.
+This challenge requires you to summon and kill three ogres in addition in completing the encounter. The ogres are summoned in the center of the arena when a guardian cleanses one of the three plates that don't match one of the symbols in the center. Because of a bug where the third ogre doesn't always appear if there are already two in the center, the best way to complete the challenge is to only summon two ogres at first.
 
-Because of a bug where the third ogre doesn't appear if there are already two in the center.
+A simple way to organize this is as follows:
+
+- Three guardians will each cleanse a plate to open doors and move to the center to kill the ogres.
+
+- Two guardians will each cleanse a plate to summon an ogre and then cleanse a plate to open the doors. After the second plate they move to the center to damage Kalli.
+
+- One guardian will cleanse a plate to open a set of doors and then cleanse the last plate to summon and ogre. After their second plate they should move to center to help damage Kalli.
+
+If you fail to defeat Kalli before going into the doors the third time durring the damage phase, the ogres must be summoned and killed again before defeating Kalli.

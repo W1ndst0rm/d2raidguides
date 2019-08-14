@@ -1,67 +1,67 @@
 {{ define "main" }}
 
-  {{ partial "post-banner.html" . }}
+{{ partial "post-banner.html" . }}
 
-  {{ "<!-- details page -->" | safeHTML }}
-  <section class="single section bg-dark-gray pb-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="sticky-top page-nav">
-              <div class="mb-5 bg-white p-4 ">
-                  <a href="#">
-                    <h4 class="mb-4">{{ .Title }}</h4>
-                  </a>
-                  <ul class="list-styled">
-                    {{ range .Page.Params.nav }}
-               
-                        <!--- List_Item -->
-                        {{ if (isset . "subsections") }}
-                        <li><a href="{{ .url }}">{{ .name }}</a>
-                          <ul class="list-styled">
-                          {{ range .subsections }}
-                            <li><a href="{{ .url }}">{{ .name }}</a></li>
-                          {{ end }}
-                          </ul>
-                        </li>
-                        {{ else }}
-                        <li><a href="{{ .url }}">{{ .name }}</a></li>
-                        {{ end }}
-                    {{ end }}
-                    <script>
-                    // The function actually applying the offset
-                    function offsetAnchor() {
-                      if (location.hash.length !== 0) {
-                      window.scrollTo(window.scrollX, window.scrollY - 80);
-                      }
-                    }
-      
-                    // Captures click events of all <a> elements with href starting with #
-                    $(document).on('click', 'a[href^="#"]', function(event) {
-                      // Click events are captured before hashchanges. Timeout
-                      // causes offsetAnchor to be called after the page jump.
-                      window.setTimeout(function() {
-                      offsetAnchor();
-                      }, 0);
-                    });
-      
-                    // Set the offset when entering page with hash present in the url
-                    window.setTimeout(offsetAnchor, 0);
-                    </script>
-                  </ul>
-                </div>
+{{ "<!-- details page -->" | safeHTML }}
+<section class="single section bg-dark-gray pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sticky-top page-nav">
+          <div class="mb-5 bg-white p-4 ">
+            <a href="#">
+              <h4 class="mb-4">{{ .Title }}</h4>
+            </a>
+            <ul class="list-styled">
+              {{ range .Page.Params.nav }}
+
+              <!--- List_Item -->
+              {{ if (isset . "subsections") }}
+              <li><a href="{{ .url }}">{{ .name }}</a>
+                <ul class="list-styled">
+                  {{ range .subsections }}
+                  <li><a href="{{ .url }}">{{ .name }}</a></li>
+                  {{ end }}
+                </ul>
+              </li>
+              {{ else }}
+              <li><a href="{{ .url }}">{{ .name }}</a></li>
+              {{ end }}
+              {{ end }}
+              <script>
+                // The function actually applying the offset
+                function offsetAnchor() {
+                  if (location.hash.length !== 0) {
+                    window.scrollTo(window.scrollX, window.scrollY - 80);
+                  }
+                }
+
+                // Captures click events of all <a> elements with href starting with #
+                $(document).on('click', 'a[href^="#"]', function (event) {
+                  // Click events are captured before hashchanges. Timeout
+                  // causes offsetAnchor to be called after the page jump.
+                  window.setTimeout(function () {
+                    offsetAnchor();
+                  }, 0);
+                });
+
+                // Set the offset when entering page with hash present in the url
+                window.setTimeout(offsetAnchor, 0);
+              </script>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-9 page-content">
-          <div class="p-5 bg-white">
-              <div class="bg-gray p-4">
-                  {{ .Content }}
-              </div>
+      </div>
+      <div class="col-lg-9 page-content">
+        <div class="p-5 bg-white">
+          <div class="bg-gray p-4">
+            {{ .Content }}
           </div>
         </div>
       </div>
     </div>
-  </section>
-  {{ "<!-- /details page -->" | safeHTML }}
+  </div>
+</section>
+{{ "<!-- /details page -->" | safeHTML }}
 
 {{ end }}
